@@ -63,7 +63,7 @@ a:active { /* selected link */
 .button.contact {
     background-color: transparent;
     color: #125190;
-    padding: 7px;
+    padding: 6px 12px;
     text-transform: uppercase;
     border: 2px solid #125190;
 }
