@@ -81,7 +81,6 @@ a:active { /* selected link */
 #work, #aboutpage main, #projectpage1 main, #projectpage2 main {padding-bottom: 40px;}
 #projectpage1 main img, #projectpage2 main img {
     max-width: 800px;
-    margin: 0 auto;
 }
 #contact {
     background-color: #eaebec;
