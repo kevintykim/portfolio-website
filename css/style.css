@@ -13,11 +13,14 @@ h1, h2, h3, h4, p {line-height: 1.4;}
 h1 {
     font-size: 2em;
     font-weight: 700;
+    text-align: center;
 } 
 h2 {
     font-size: 1.75em;
     font-weight: 400;
+    text-align: center;
 }
+h2 span {font-size: 0.85em;}
 h3 {
     font-size: 1.5em;
     font-weight: 700;
@@ -30,8 +33,6 @@ p {
     font-size: 1.1em;
     letter-spacing: 0.1px;
 }
-
-img {width: 100%;}
 
 a {
     color: #004284;
@@ -77,17 +78,27 @@ a:active { /* selected link */
     color: #ffffff;
     transition: none;
 }
-#work img, #aboutpage main img {max-width: 500px;}
+#work img, #aboutpage main img {max-width: 95%;}
 #work, #aboutpage main, #projectpage1 main, #projectpage2 main {padding-bottom: 40px;}
 #projectpage1 main img, #projectpage2 main img {
-    max-width: 800px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #contact {
     background-color: #eaebec;
     display: inline-block;
     width: 100%;
+    text-align: center;
 }
-
+.mystory span {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+.skillstools {margin-top: 60px;}
+.skillstools li {margin-left: -30px;}
+.skillstools2 {padding-bottom: 0px;}
 
 /* Layout styling */
 
@@ -100,8 +111,6 @@ header {
     padding-bottom: 5px;
     box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.8);
 }
-.container {padding: 0 15px;}
-.column2 {margin-bottom: 25px;}
 #hero {
     background-color: #eaebec;
     text-align: center;
@@ -109,11 +118,15 @@ header {
     display: inline-block;
     width: 100%;
 }
+#hero h2 span {font-weight: 200;}
 #aboutpage > main, #projectpage1 > main, #projectpage2 > main {
     padding-top: 200px;
-    display: inline-block;
+    display: block;
 }
-.logo {max-width: 150px;}
+.logo {
+    width: 100%;
+    max-width: 150px;
+}
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -128,4 +141,105 @@ nav > ul > li > a {
     font-size: 18px;
     font-weight: 700;
     color: #4a4a4a;  
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+picture {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+picture img {
+    width: 80%;
+    display: block;
+}
+#mypicture {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.goldengate {
+    width: 77%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes color-change {
+    0% {fill: #B4E3F6;}
+    10% {fill: #B4E3F6;}
+    30% {fill: #F0C488;}
+    40% {fill: #CB964E;}
+    60% {fill: #000580;}
+    70% {fill: #000580;}
+    100% {fill: #B4E3F6;}
+}
+#Rectangle_158 {animation: 10s color-change infinite linear;}
+@keyframes sun {
+    from {transform: translate(500px,-1000px);}
+    to {transform: translate(500px,3000px);}
+}
+@keyframes moon {
+    from {transform: translate(450px,-2800px);}
+    to {transform: translate(450px,1200px);}
+}
+#Ellipse_130 {animation: 10s sun infinite linear;}
+#Subtraction_1 {animation: 10s moon infinite linear;}
+
+/* Media queries */
+
+@media only screen and (min-width: 640px) {
+    body {font-size: 18px;}
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 15px;
+        padding-right: 25px;
+    }
+    #hero {padding-top: 140px;}
+    .col-md-6 {width: 50%;}
+    [class*="col-"] {float: left;}
+    .row {margin-bottom: 30px;}
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .row1, .row2 {
+        padding-bottom: 22px;
+        border-bottom: 2px solid #151515;
+    }
+    #work img {padding-right: 20px;}
+    h3 {margin-top: 0;}
+    #aboutpage h4 {margin-bottom: -5px;}
+    .skillstools {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-lg-7 {width: 60%;}
+    .col-lg-5 {width: 40%;}
+    .col-lg-4 {width: 30%;}
+    #mypicture {width: 40%;}
+    .mystory h2, .mystory span {text-align: left;}
+    .skillstools {margin: 0 0 40px 100px;}
+    .skillstools h2 {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    #aboutpage .col-md-6 {width: 100%;}
+}
+
+@media only screen and (min-width: 1440px) {
+}
+
+@media only screen and (min-width: 1920px) {
 }
