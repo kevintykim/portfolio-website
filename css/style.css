@@ -131,17 +131,28 @@ nav > ul {
     list-style-type: none;
     padding: 0;
 }
-nav > ul > li {
-    display: inline-block;
-    padding-top: 0px;
-}
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
-    color: #4a4a4a;  
+    color: #4a4a4a;
 }
+.navtoggle li:not(:last-child) {display: none;}
+.navtoggle, .navtoggle.responsive {position: relative;}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 8px 0;
+}
+.navtoggle i {padding-top: 36px;}
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -188,7 +199,11 @@ picture img {
 #Ellipse_130 {animation: 10s sun infinite linear;}
 #Subtraction_1 {animation: 10s moon infinite linear;}
 
-/* Media queries */
+
+
+
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 640px) {
     body {font-size: 18px;}
@@ -202,6 +217,12 @@ picture img {
         margin-top: 15px;
         padding-right: 25px;
     }
+    nav > ul > li {
+        display: inline-block;
+        padding-top: 0px;
+    }
+    .navtoggle li:not(:last-child) {display: inline-block;}
+    .navtoggle li:last-child {display: none;}
     #hero {padding-top: 140px;}
     .col-md-6 {width: 50%;}
     [class*="col-"] {float: left;}
