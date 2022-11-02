@@ -147,9 +147,10 @@ nav > ul > li > a {
     font-size: 20px;
     padding-right: 0;
 }
+.navtoggle.responsive {margin-bottom: -18px;}
 .navtoggle.responsive li {
     display: block;
-    padding: 8px 0;
+    padding: 8px;
 }
 .navtoggle i {padding-top: 36px;}
 
@@ -223,6 +224,9 @@ picture img {
     }
     .navtoggle li:not(:last-child) {display: inline-block;}
     .navtoggle li:last-child {display: none;}
+    .navtoggle.responsive {margin: 0;}
+    .navtoggle.responsive li {padding: 0;}
+
     #hero {padding-top: 140px;}
     .col-md-6 {width: 50%;}
     [class*="col-"] {float: left;}
