@@ -90,6 +90,7 @@ a:active { /* selected link */
     display: inline-block;
     width: 100%;
     text-align: center;
+    border-top: 3px solid #777777;
 }
 .mystory span {
     display: block;
