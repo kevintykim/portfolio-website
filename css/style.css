@@ -48,7 +48,7 @@ a:hover, a:focus {
 a:active { /* selected link */
     color: #D15B30;
 }
-.button, .button:visited {
+.button, .indexbutton, .button:visited, .indexbutton:visited {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #004284;
     color: #ffffff;
@@ -58,11 +58,11 @@ a:active { /* selected link */
     border-bottom: 2px solid #777777;
     transition: 0.2s opacity;
 }
-.button:hover, .button:focus {
+.button:hover, .button:focus, .indexbutton:hover, .indexbutton:focus {
     opacity: 0.75;
     text-decoration: none;
 }
-.button:active {
+.button:active, .indexbutton:active {
     opacity: 1;
     text-decoration: none;
 }
@@ -78,6 +78,15 @@ a:active { /* selected link */
     color: #ffffff;
     transition: none;
 }
+.indexbutton {
+    display: block;
+    width: 60%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 #work img, #aboutpage main img {max-width: 95%;}
 #work, #aboutpage main, #projectpage1 main, #projectpage2 main {padding-bottom: 40px;}
 #projectpage1 main img, #projectpage2 main img {
@@ -121,12 +130,22 @@ header {
 }
 #hero h2 span {font-weight: 200;}
 #aboutpage > main, #projectpage1 > main, #projectpage2 > main {
-    padding-top: 200px;
+    padding-top: 100px;
     display: block;
 }
 .logo {
     width: 100%;
     max-width: 100px;
+}
+#indexpage .logo {
+    width: 100%;
+    max-width: 250px;
+    margin: -50px 0 30px;
+}
+#indexpage ul {padding: 0;}
+#indexpage ul li {
+    list-style-type: none;
+    margin-top: 35px;
 }
 nav > ul {
     list-style-type: none;
@@ -201,7 +220,42 @@ picture img {
 #Ellipse_130 {animation: 10s sun infinite linear;}
 #Subtraction_1 {animation: 10s moon infinite linear;}
 
-
+@keyframes fade-in-1 {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in-2 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in-3 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in-4 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+#fade1 {animation: 0.75s fade-in-1 1 ease-out;}
+#fade2 {animation: 0.75s fade-in-2 1 ease-out;}
+#fade3 {animation: 0.75s fade-in-3 1 ease-out;}
+#fade4 {animation: 0.75s fade-in-4 1 ease-out;}
 
 
 
