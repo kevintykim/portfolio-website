@@ -2,7 +2,7 @@
 
 body {
     background-color: #ffffff;
-    font-family: 'Avenir', 'Lato', sans-serif;
+    font-family: 'Lato', 'Avenir', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
@@ -46,7 +46,7 @@ a:hover, a:focus {
     text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-    color: #D15B30;
+    color: #B04C27;
 }
 .button, .indexbutton, .button:visited, .indexbutton:visited {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -109,6 +109,22 @@ a:active { /* selected link */
 .skillstools {margin-top: 60px;}
 .skillstools li {margin-left: -30px;}
 .skillstools2 {padding-bottom: 0px;}
+
+.row {margin-bottom: 50px;}
+.row img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.projectinfo {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.projectinfo h3 {
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
 
 /* Layout styling */
 
@@ -186,6 +202,13 @@ picture {
     margin-right: auto;
 }
 picture img {
+    width: 80%;
+    display: block;
+}
+#workpage svg {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     display: block;
 }
@@ -284,6 +307,7 @@ picture img {
 
     #hero {padding-top: 80px;}
     .col-md-6 {width: 50%;}
+    .col-md-12 {width: 100%;}
     [class*="col-"] {float: left;}
     .row {margin-bottom: 30px;}
     .row::after {
